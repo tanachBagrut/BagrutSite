@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סיכום בגרות תנ"ך</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 4rem;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            text-align: right;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #e8eaf6;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        li img {
+            width: 50px;
+            height: 75px;
+            margin-right: 1rem;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #6200ea;
+            font-weight: bold;
+            margin-left: auto;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #6200ea;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .pdf-viewer {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .pdf-viewer iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>סיכום בגרות תנ"ך יב</h1>
+    </header>
+    <main>
+        <h2>חומר לבגרות</h2>
+        <ul>
+            <li>
+                <img src="images/תורה.jpg" alt="תורה">
+                <span>תורה</span>
+                <a href="books/תורה.docx" download>הורד</a>
+            </li>
+            <li>
+                <img src="images/ירמיהו.jpg" alt="ירמיהו">
+                <span>ספר ירמיהו סיכום בגרות</span>
+                <a href="books/ספר_ירמיהו_סיכום_בגרות.pdf" download>הורד</a>
+            </li>
+            <li>
+                <img src="images/ירמיהו.jpg" alt="ירמיהו">
+                <span>ירמיהו פרק לא</span>
+                <a href="books/ירמיהו_פרק_לא.pdf" download>הורד</a>
+            </li>
+            <li>
+                <img src="images/יחזקאל.jpg" alt="יחזקאל">
+                <span>סיכום יחזקאל</span>
+                <a href="books/סיכום_יחזקאל.pdf" download>הורד</a>
+            </li>
+            <li>
+                <img src="images/עזרא.jpg" alt="עזרא">
+                <span>סיכום עזרא וחגי</span>
+                <a href="books/סיכום_עזרא_וחגי.pdf" download>הורד</a>
+            </li>
+            <li>
+                <img src="images/נחמיה.jpg" alt="נחמיה">
+                <span>סיכום ונחמיה</span>
+                <a href="books/סיכום_ונחמיה.pdf" download>הורד</a>
+            </li>
+        </ul>
+        <div class="pdf-viewer">
+            <iframe src="books/formula.pdf" title="Formula PDF"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bagrut Tanach</p>
+    </footer>
+</body>
+</html>
