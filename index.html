@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -119,6 +119,72 @@
         .link-box a:hover {
             color: #3700b3;
         }
+        .timeline {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #f4f4f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .timeline h2 {
+            font-size: 1.5rem;
+            color: #6200ea;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .timeline-step {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 2rem;
+        }
+        .timeline-step:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 10px;
+            height: 10px;
+            background-color: #6200ea;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+        }
+        .timeline-step:after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 24px;
+            width: 2px;
+            height: calc(100% - 15px);
+            background-color: #6200ea;
+        }
+        .timeline-step:last-child:after {
+            display: none;
+        }
+        .timeline-content {
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-content h3 {
+            margin: 0;
+            color: #333;
+        }
+        .timeline-content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+        .timeline-content a {
+            text-decoration: none;
+            color: #6200ea;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -171,8 +237,54 @@
         <a href="https://youtube.com/playlist?list=PL2aTGZ6XbFTOe4w3fHHBTj9hq3l-pagB4&si=q7zTUoAs8rgUK5Tt" target="_blank">נחמיה</a>
         <a href="https://youtube.com/playlist?list=PLrGI0FtWpUBPTNu1FDrW9JukVZL08Og07&si=5tt4WfgdGrK3TEjp" target="_blank">חגי</a>
     </div>
+    <div class="timeline">
+        <h2>ציר למידה מומלץ</h2>
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <img src="images/תורה.jpg" alt="תורה">
+                <h3>תורה</h3>
+                <a href="books/תורה.pdf" target="_blank">למד עוד</a>
+            </div>
+        </div>
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <img src="images/ירמיהו.jpg" alt="ירמיהו">
+                <h3>סרטוני ירמיה</h3>
+                <a href="https://youtube.com/playlist?list=PLrGI0FtWpUBNMtZEsbFToFRJVyMXDWimK&si=qYx5aEhX3ogQDPW_" target="_blank">למד עוד</a>
+            </div>
+        </div>
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <img src="images/יחזקאל.jpg" alt="יחזקאל">
+                <h3>סרטוני יחזקאל</h3>
+                <a href="https://youtube.com/playlist?list=PLrGI0FtWpUBPq0S_5djYZumKwHJ5T_mJ3&si=z1iytTVxKgZClOAX" target="_blank">למד עוד</a>
+            </div>
+        </div>
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <img src="images/עזרא.jpg" alt="עזרא">
+                <h3>סרטוני עזרא</h3>
+                <a href="https://youtube.com/playlist?list=PLrGI0FtWpUBOgK-a365PaBu4dceuGA6wP&si=FAnXK4K-ehWKIrO2" target="_blank">למד עוד</a>
+            </div>
+        </div>
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <img src="images/נחמיה.jpg" alt="נחמיה">
+                <h3>סרטוני נחמיה</h3>
+                <a href="https://youtube.com/playlist?list=PL2aTGZ6XbFTOe4w3fHHBTj9hq3l-pagB4&si=q7zTUoAs8rgUK5Tt" target="_blank">למד עוד</a>
+            </div>
+        </div>
+        <div class="timeline-step">
+            <div class="timeline-content">
+                <img src="images/חגי.jpg" alt="חגי">
+                <h3>סרטוני חגי</h3>
+                <a href="https://youtube.com/playlist?list=PLrGI0FtWpUBPTNu1FDrW9JukVZL08Og07&si=5tt4WfgdGrK3TEjp" target="_blank">למד עוד</a>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2025 Bagrut Tanach</p>
     </footer>
 </body>
 </html>
+
